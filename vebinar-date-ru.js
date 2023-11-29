@@ -4,7 +4,7 @@ $(document).ready(function () {
   
   var currentDay = t.getDay();
 
-  if (currentDay !== 5 && currentDay !== 6) { // Если текущий день не является пятницей или субботой, то прибавляем 1 день
+  if (currentDay !== 5 && currentDay !== 6) {
     e.setDate(t.getDate() + 1);
   } else if (currentDay === 5) {
     e.setDate(t.getDate() + 3);
