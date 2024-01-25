@@ -4,7 +4,7 @@ $(document).ready(function () {
   
   var currentDay = t.getDay();
 
-   if (currentDay !== 4 && currentDay !== 5) {
+  if (currentDay !== 4 && currentDay !== 5) {
     e.setDate(t.getDate() + 1);
   } else if (currentDay === 4) {
     e.setDate(t.getDate() + 3);
