@@ -4,14 +4,12 @@ $(document).ready(function () {
   
   var currentDay = t.getDay();
 
-  if (currentDay !== 4 && currentDay !== 5 && currentDay !== 6) {
+   if (currentDay !== 4 && currentDay !== 5) {
     e.setDate(t.getDate() + 1);
   } else if (currentDay === 4) {
     e.setDate(t.getDate() + 3);
   } else if (currentDay === 5) {
     e.setDate(t.getDate() + 2);
-  } else if (currentDay === 6) {
-    e.setDate(t.getDate() + 1);
   }
 
   var n = new Date,
